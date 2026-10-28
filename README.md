@@ -61,6 +61,7 @@ PRD 文档强制规则（完整清单见 `SKILL.md` Stage 1）：
 
 | 版本 | 日期 | 变更 |
 | :--- | :--- | :--- |
+| v1.1.1 | 2026-10-28 | Formatting 规则补充：Avoid unnecessary secondary labels and descriptions. Let the layout do the explaining. |
 | v1.1.0 | 2026-10-28 | `/plan-prd` 新增 PRD Microsoft Style 写作规范（语气/简洁/一致/行动导向/格式五维），`prd.md.template` 同步内置规范自查段 |
 | v1.0.0 | 2026-10-28 | 首个公开发布版本：七阶段工作流 + 硬门禁 + 模板与评测用例 |
 
