@@ -1,6 +1,6 @@
 ---
 name: ai-coding-workflow
-description: "标准化 AI 敏捷协作与工程交付工作流（AI Agile Delivery Spec）。用于指导 AI 与人类高效结对编程、规范从 0 到 1 项目立项、需求做减法（PRD）、技术方案规划与确认门拦截、DESIGN.md 视觉对齐、测试驱动开发（TDD）及代码审查交付。当用户提到开始新项目、写代码、设计功能、制定技术方案、重构系统、或者输入 /init, /plan-prd, /plan, /demo, /tdd, /review, /ship 等工作流指令时，必须优先使用此技能。"
+description: "标准化 AI 敏捷协作与工程交付工作流（AI Agile Delivery Spec）。用于指导 AI 与人类高效结对编程、规范从 0 到 1 项目立项、需求做减法（PRD，对齐 Microsoft Writing Style Guide 写作规范）、技术方案规划与确认门拦截、DESIGN.md 视觉对齐、测试驱动开发（TDD）及代码审查交付。当用户提到开始新项目、写代码、设计功能、制定技术方案、重构系统、或者输入 /init, /plan-prd, /plan, /demo, /tdd, /review, /ship 等工作流指令时，必须优先使用此技能。"
 ---
 
 # AI Coding 标准工作流 (AI Agile Delivery Spec)
@@ -53,6 +53,13 @@ description: "标准化 AI 敏捷协作与工程交付工作流（AI Agile Deliv
      - **Out of Scope**：本期明确不做、延期考虑的伪需求。
   3. 将结论保存为 `.ai/prds/{feature}.prd.md`。
 - **边界约束**：PRD 中**严禁**出现数据库字段设计、API URL、技术框架等 How 维度的技术细节，只聚焦业务价值与用户流程。
+- **写作风格约束（Microsoft Style）**：PRD 是人机双向阅读的文档（AI 消费执行 + 人类评审拍板），必须对齐 [Microsoft Writing Style Guide](https://learn.microsoft.com/style-guide/) 核心规则。技术方案文档（plan）纯供 AI 阅读，**不适用**本规范。五维硬性规则：
+  1. **语气（Voice & Tone）**：面向读者用第二人称（「你」/「您」按项目惯例统一），主动语态，现在时。禁止被动腔与企业腔（「将被执行」→「系统执行」）。
+  2. **简洁（Concise）**：短句短段，一句一个信息点。删除冗词：`in order to → to`、`用于进行…的操作 → 用于…`、`simply` 直接删。能用一个词说清就不用两个词。
+  3. **一致（Consistent）**：同一概念全篇只用同一个词，严禁同义词轮换（「用户/使用者/客户」三选一并贯彻）。状态措辞封闭：只用「草稿 / 待确认 / 已确认」及 P0/P1 优先级，禁用「待定 / 以后再说 / 后续考虑」这类无法判定的词——必须改写为具体条件。
+  4. **行动导向（Action-oriented）**：用户流程步骤一律动词开头；写具体交互动作而非模糊指称（「点击相应按钮」→「选择保存」）。验收标准必须可判定（写清输入、动作、预期结果）。
+  5. **格式（Formatting）**：标题用句首大写（sentence case）；加粗仅作结构性信号（字段名、关键术语首次定义），禁止用加粗表达整段情绪强调；列表项结构平行（同为名词短语或同为动词短语）。
+- **PRD 自查门禁**：保存 `.ai/prds/{feature}.prd.md` 前，逐条过五问——①有被动腔企业腔吗？②有可删的冗词吗？③同一概念换过词吗？④每条流程步骤动词开头、验收可判定吗？⑤标题大写与加粗用法符合规则吗？任一不过即重写后再落盘。
 
 ---
 

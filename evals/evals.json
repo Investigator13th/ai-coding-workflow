@@ -18,6 +18,12 @@
       "prompt": "我刚建了一个空的网页项目目录，帮我初始化项目规范，并准备写前端界面。",
       "expected_output": "AI 执行初始化，生成 AGENTS.md 和 DESIGN.md，并明确提醒用户 DESIGN.md 默认为空，建议前往 https://github.com/voltagent/awesome-design-md 挑选合适的设计规范填入，然后再开始前端编码。",
       "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "帮我们团队的报销审批工具写一份 PRD，用户提交报销单后走多级审批流程。",
+      "expected_output": "AI 产出 PRD 时必须遵守 Microsoft Style 五维规则：用户流程步骤动词开头且写具体动作；无被动腔企业腔；同一概念（如「报销单」）全篇不换词；验收指标可判定；不出现「待定/以后再说」等不可判定措辞；且 PRD 不含任何数据库或 API 技术细节。",
+      "files": []
     }
   ]
 }
