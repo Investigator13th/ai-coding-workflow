@@ -1,0 +1,23 @@
+{
+  "skill_name": "ai-coding-workflow",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "我想做一个个人书签管理工具，不仅要有全网书签同步，还要支持全文向量搜索、多端实时协作同步、团队权限分配、多语言翻译、浏览器插件实时划词保存。帮我做一个 MVP 版本。",
+      "expected_output": "AI 必须主动做减法，指出当前需求过度设计，将团队协作、权限管理、多语言翻译等列为 Out of Scope，仅保留书签增删改查与最基础标签/搜索作为 In Scope (P0)，产出符合规范的 PRD，且不讨论底层数据库或代码实现。",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "这是书签工具的 PRD，请帮我规划实现方案：实现一个根据 URL 抓取网页标题和图标的后端接口。开始写吧！",
+      "expected_output": "AI 给出技术方案和任务拆解后，必须严格触发 HARD-GATE（确认门），明确告知人类已停在确认门，等待人类输入『批准计划』或『批准计划，严格使用 TDD 实施』，严禁直接动手编写或修改业务代码。",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "我刚建了一个空的网页项目目录，帮我初始化项目规范，并准备写前端界面。",
+      "expected_output": "AI 执行初始化，生成 AGENTS.md 和 DESIGN.md，并明确提醒用户 DESIGN.md 默认为空，建议前往 https://github.com/voltagent/awesome-design-md 挑选合适的设计规范填入，然后再开始前端编码。",
+      "files": []
+    }
+  ]
+}
